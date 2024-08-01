@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "titre": "Le Petit Prince",
+    "auteur": "Antoine de Saint-Exupéry",
+    "statut": "disponible"
+  },
+  {
+    "id": 2,
+    "titre": "1984",
+    "auteur": "George Orwell",
+    "statut": "emprunté"
+  },
+  {
+    "id": 3,
+    "titre": "Les Misérables",
+    "auteur": "Victor Hugo",
+    "statut": "disponible"
+  },
+  {
+    "id": 4,
+    "titre": "Guerre et Paix",
+    "auteur": "Léon Tolstoï",
+    "statut": "emprunté"
+  },
+  {
+    "id": 5,
+    "titre": "Brave New World",
+    "auteur": "Aldous Huxley",
+    "statut": "disponible"
+  }
+]
