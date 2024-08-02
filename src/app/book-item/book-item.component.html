@@ -1,0 +1,13 @@
+<div class="card-deck m-3">
+    <div class="card bg-light text-dark" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">{{ book.title }}</h5>
+        <p class="card-text">Par {{ book.author }} - Statut : {{ book.status }}</p>
+        <small class="text-muted">{{ book.description }}</small>
+        <div class="d-flex justify-content-center gap-2 mt-3">
+          <button class="btn btn-danger w-50" (click)="onRemove()">Supprimer</button>
+          <button class="btn btn-primary w-50" (click)="onView()">Afficher</button>
+        </div>
+      </div>
+    </div>
+  </div>

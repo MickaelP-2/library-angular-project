@@ -1,1 +1,11 @@
-<p>book-list works!</p>
+<h2 class="text-center text-danger mt-5">Liste de tout les livres</h2>
+<div class="container">
+    <div class="row">
+      <div class="col-md-4" *ngFor="let book of books$ | async">
+        <digi-book-item [book]="book" (view)="viewBookDetails($event)" (remove)="onRemoveBook($event)"></digi-book-item>
+      </div>
+    </div>
+  </div>
+  <h3 class="text-center text-primary mt-5">Ajouter un livre</h3>
+  <digi-add-book (addBook)="addBook($event)" ></digi-add-book>
+
