@@ -1,9 +1,10 @@
 //interface de l'objet livre en TypeScript
-//Utilisée pour les types ds données: id, titre,auteur,statut=disponible/emprunté
+//Utilisée pour les types ds données: id, titre,auteur,, description, statut=disponible/emprunté 
 export interface Book{
 
-    id: number,
-    titre: string,
-    auteur: string,
-    statut: string;
+    id: string,
+    title: string,
+    author: string,
+    description: string,
+    status: string;
 }

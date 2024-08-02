@@ -1,0 +1,24 @@
+<div class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-6">
+        <div class="card shadow-lg border-0">
+          <div class="card-header p-4">
+            <h5 class="card-title text-center font-weight-bold">{{ book.title }}</h5>
+          </div>
+          <div class="card-body">
+            <p class="card-text">Par {{ book.author }} - Statut : {{ book.status }}</p>
+            <small class="card-text text-muted">{{ book.description }}</small>
+            <hr>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button (click)="ChangeStatusBook(book)" class="btn btn-success btn-lg">Changer le statut</button>
+            <button (click)="editBook(book)" class="btn btn-warning btn-lg">Modifier</button>
+              <button (click)="returnToBooks()" class="btn btn-primary btn-lg">Retour</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="message" class="alert alert-success mt-3" role="alert">
+        {{ message }}
+      </div>
+  </div>
